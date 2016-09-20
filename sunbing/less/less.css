@@ -1,0 +1,23 @@
+a {
+  background-color: blue;
+}
+.box {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+.box1 {
+  border: 1px solid red;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+.box2 {
+  border: 1px solid red;
+}
+.box2 a {
+  text-decoration: none;
+}
+.box2 a:hover {
+  background-color: #fff;
+}
