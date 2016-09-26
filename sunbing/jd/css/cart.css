@@ -1,0 +1,252 @@
+body {
+    background-color: #e7e7e7;
+}
+
+.cart_header {
+    height: 40px;
+    border-bottom: 1px solid #aaaaaa;
+    position: relative;
+}
+
+.cart_header h3 {
+    font-weight: normal;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cart_header span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+}
+
+.cart_header .icon_cart_left {
+    background-position: 180px 0;
+
+    left: 10px;
+}
+
+.cart_header .icon_cart_right {
+    background-position: 142px 0;
+    right: 10px;
+
+}
+
+.safety {
+    height: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #aaaaaa;
+    text-align: center;
+}
+
+.safety p {
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.safety p::before {
+    content: "";
+    display: block;
+    background: url("../images/safe_icon.png");
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    margin-top: 8px;
+    position: absolute;
+    left: -20px;
+}
+
+.shop_nav {
+    height: 30px;
+    /*border-bottom: 1px solid #aaaaaa;*/
+    background-color: #fff;
+}
+
+.shop_nav .shop_nav_left {
+    background: url(../images/shop-icon.png);
+    width: 20px;
+    height: 20px;
+    background-size: 50px 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.shop_nav .shop_nav_right .icon_shop {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.shop_nav .shop_nav_right .nav_left {
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.shop_nav .shop_nav_right .nav_right {
+    color: red;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.product {
+    /*height: 100px;*/
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.product .product_left {
+    background: url(../images/shop-icon.png) 125px 0;
+    width: 20px;
+    height: 20px;
+    background-size: 50px 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.product .product_right {
+    border-top: 1px solid #aaaaaa;
+
+}
+
+.product .product_right .a1 {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.product .product_right .a1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.product_right .product_info {
+    margin-top: 20px;
+    margin-left: 160px;
+    overflow: hidden;
+}
+
+.product_right .product_info .product_top a {
+    display: block;
+    max-height: 30px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #333;
+}
+
+.product_right .product_info .product_fot {
+    margin-top: 5px;
+    color: red;
+}
+
+.product_buy .product_buy_left {
+    margin-top: 10px;
+}
+
+.product_buy .product_buy_left span {
+    width: 30px;
+    height: 20px;
+    border: 1px solid #aaaaaa;
+    text-align: center;
+    line-height: 20px;
+}
+
+.product_buy .product_buy_left input {
+    width: 40px;
+    height: 20px;
+    border: 1px solid #aaaaaa;
+}
+
+.product_buy .product_buy_right {
+    margin-right: 20px;
+}
+
+.product_buy .product_buy_right .up {
+    background: url(../images/delete_up.png )no-repeat;
+    width: 16px;
+    height: 5px;
+    display: block;
+    background-size: 16px 5px;
+}
+
+.product_buy .product_buy_right .down {
+    background: url(../images/delete_down.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-size: 16px 16px;
+    margin-top: -2px;
+}
+
+.minBox {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.minBox .jd_minBox {
+    width: 80%;
+    margin: 200px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.minBox .jd_minBox p {
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 20px 0;
+    display: block;
+}
+.minBox .jd_minBox .search{
+    overflow: hidden;
+}
+.minBox .jd_minBox .search .clear{
+    margin-right: 10%;
+    border-bottom: 1px solid #aaaaaa;
+    color:#333;
+}
+.minBox .jd_minBox .search a {
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    width: 45%;
+    border-bottom: 1px solid #aaaaaa;
+    border-radius: 5px;
+    margin:15px 0;
+    font-size: 16px;
+}
+.minBox .jd_minBox .search .ok {
+    background-color: #d8505c;
+    color:white;
+}
+.moveY{
+    animation: change .5s linear 1;
+}
+
+@keyframes change{
+    0%{
+      transform: translateY(-50px);
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(150px);
+        opacity:0.7;
+    }
+    60%{
+        transform: translateY(-10px);
+         }
+    100%{
+        transform: translateY(0px);
+    }
+}

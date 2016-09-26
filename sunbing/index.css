@@ -1,12 +1,45 @@
-.box1,.box2,.box3,.box4{
-    /*background-color: #ffdab3;*/
-    background:url("image/bg1.jpg");
+body{
+    width: 100%;
+    height: 100%;
+}
+.box1{
+    width: 100%;
+    height: 100%;
+    background:url("image/1.jpg");
+    background-size:100% 100%;
+}
+.box2{
+    width: 100%;
+    height: 100%;
+    background:url("image/6.jpg");
+    background-size:100% 100%;
+}
+.box3{
+    width: 100%;
+    height: 100%;
+    background:url("image/5.png");
+    background-size:100% 100%;
+}
+
+.box4{
+    width: 100%;
+    height: 100%;
+    background:url("image/8.jpg");
+    background-size:100% 100% ;
+
+}
+.box5{
+    width: 100%;
+    height: 100%;
+    background:url("image/3.jpg");
+    background-size:100% 100% ;
+
 }
 .box1 hr{
     width: 80%;
     height: 3px;
     border:none;
-    border-top:3px double red;
+    border-top:3px double cornflowerblue;
 }
  .public{
     width: 50%;
@@ -14,7 +47,14 @@
     text-align: center;
 }
  .public a{
-    color:black;
+     text-decoration: none;
+    color: #5762ad;
+     font-size: 23px;
+     font-weight: 800;
+}
+
+.public a:hover{
+    color:blue;
 }
 
 .public .line{
@@ -74,7 +114,7 @@
     width: 100%;
     height: 200px;
     border-radius: 20px;
-    background-color: #A0A0B4;
+    background-color: #c7c7dc;
 }
 .box2 .message .public_message{
     width: 15%;
@@ -88,7 +128,7 @@ position: relative;
 .box2 .message .public_message:hover{
     background-color: white;
     transform: scale(1.2);
-    border:solid 6px #ccc;
+    border:solid 6px lightskyblue;
     /*opacity: 0.1;*/
     background-color: white;
     transition: all 0.5s linear;
@@ -123,39 +163,71 @@ position: relative;
     width: 15%;
     float:left;
     margin:0px 5%;
+    position: relative;
+
 
 }
 .box2 .message .myMseeage p{
     color:white;
+    font-size: 15px;
+    font-weight: 600;
 }
 .box2 .message .myMseeage p:last-of-type{
     float:right;
-    position: relative;
 }
-.box2 .message .myMseeage p:last-of-type::before{
-    content:"";
-    display: block;
+.box2 .message .myMseeage .line{
     position: absolute;
-    bottom: 20px;
-    left: -70px;
+    bottom: 22px;
+    left: 10px;
     width: 100px;
-    height: 2px;
-    background-color: #ccc;
+    height:3px;
+    /*background-color: #838ab7;*/
     transform: rotate(-20deg);
+    background-color: white;
 }
+
+.box2 .message .myMseeage:hover p:first-of-type{
+       float:right;
+       color:#838ab7;
+       bottom: 20px;
+       right:0;
+    font-size: 17px;
+    font-weight: 600;
+}
+.box2 .message .myMseeage:hover p:last-of-type{
+    float:left;
+    color:#838ab7;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.box2.current .message .myMseeage:hover .line {
+    transform: rotate(-180deg);
+    position: absolute;
+    border:2px solid #838ab7;
+    top: 30px;
+}
+
+
+
 .box2 .appraise{
     margin-top: 30px;
     width: 100%;
-    /*background-color: red;*/
      position: relative;
 }
 .box2 .appraise p{
     display:inline-block;
     text-indent:2em;
-    color:black;
     font-size: 20px;
-    line-height: 30px;
-    margin: 25px;
+    line-height: 25px;
+    margin: 20px;
+    font-weight: 600;
+    color:#5762ad;
+
+}
+.box2 .appraise:hover p{
+    color:dodgerblue;
+
 }
 .box2 .appraise::before,.appraise::after{
     content:"";
@@ -326,3 +398,118 @@ position: relative;
     line-height: 30px;
 
 }
+
+.fontColor:hover li{
+    color:red;
+}
+.fontColor:hover p{
+    color:red;
+}
+.fontColor:hover h3{
+    color:red;
+}
+.box5{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: pink;
+}
+.exchange{
+    border: 5px double #7453cd;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    color:darkslateblue;
+    /*margin-top: 25%;*/
+}
+.exchange span{
+    font-size: 28px;
+    font-weight: 800;
+    width: 40%;
+    height: 50px;
+    margin:5% 3% 15% 3%;
+    display: inline-block;
+    text-align: center;
+    border:1px solid darkslateblue;
+    border-radius: 20px;
+    padding: 0  5%;
+}
+.exchange a {
+    text-decoration: none;
+}
+.exchange input {
+ padding-left: 20px;
+    border-radius: 20px;
+}
+.disAgree {
+    width: 100%;
+    /*height: 60%;*/
+    border:1px solid cornflowerblue;
+    border-radius: 20px;
+}
+.disAgree p{
+    font-size: 30px;
+    color:mediumslateblue;
+    padding:5%;
+    text-align: center;
+    /*border:1px solid cornflowerblue;*/
+}
+.disAgree p a{
+    text-decoration: none;
+}
+.disAgree img{
+    width:100px;
+    height: 100px;
+}
+
+
+
+.cover{
+    padding-top: 150px;
+}
+/*.cover1{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: fixed;*/
+    /*background: rgba(0,0,0,0.3);*/
+    /*top:0;*/
+    /*left:0;*/
+    /*display: none;*/
+    /*/!*position: relative;*!/*/
+/*}*/
+/*.cover1 img:first-of-type {*/
+    /*position: absolute;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*left:220px;*/
+    /*top: 60px;*/
+    /*/!*bottom:260px;*!/*/
+/*}*/
+/*.cover1 img:last-of-type {*/
+    /*position: absolute;*/
+    /*left:300px;*/
+    /*bottom:160px;*/
+/*}*/
+/*.cover1 .exchange{*/
+    /*width: 50%;*/
+    /*margin: 10% 25%;*/
+    /*text-align: center;*/
+    /*border-radius: 20px;*/
+    /*position: relative;*/
+/*}*/
+/*.cover1 .exchange span {*/
+/*}*/
+/*.cover1 .exchange p{*/
+    /*margin: 5%;*/
+
+/*}*/
+/*.cover2 {*/
+    /*margin-top: 10%;*/
+    /*width: 100%;*/
+/*}*/
+/*.cover2 .video{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
