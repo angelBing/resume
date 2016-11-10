@@ -41,6 +41,10 @@ body{
     border:none;
     border-top:3px double cornflowerblue;
 }
+audio {
+    margin-top:10px;
+}
+
  .public{
     width: 50%;
     margin: 15px 25%;
@@ -90,9 +94,20 @@ body{
     width:190px;
     height: 190px;
     border-radius: 50% 50%;
-    background-color: red;
-}
+    /*background-color: red;*/
+    position: relative;
+    /*z-index: 1;*/
 
+}
+.box1 .pic a img {
+    width:190px;
+    height: 190px;
+    display: block;
+    border-radius: 50% 50%;
+    position: absolute;
+    border:3px solid #5762ad;
+
+}
 .box1.current .public {
     animation: change 1s steps(5) 1.2s 1 forwards;
 }
@@ -400,13 +415,13 @@ position: relative;
 }
 
 .fontColor:hover li{
-    color:red;
+    color:#7453cd;
 }
 .fontColor:hover p{
-    color:red;
+    color:#7453cd;
 }
 .fontColor:hover h3{
-    color:red;
+    color:#7453cd;
 }
 .box5{
     width: 100%;
@@ -468,6 +483,13 @@ position: relative;
 
 .cover{
     padding-top: 150px;
+}
+
+.ok a{
+    border:1px solid cornflowerblue;
+    padding:5%;
+    border-radius: 20px;
+
 }
 /*.cover1{*/
     /*width: 100%;*/
