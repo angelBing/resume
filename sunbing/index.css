@@ -94,11 +94,12 @@ audio {
     width:190px;
     height: 190px;
     border-radius: 50% 50%;
-    /*background-color: red;*/
     position: relative;
-    /*z-index: 1;*/
-
 }
+
+
+
+
 .box1 .pic a img {
     width:190px;
     height: 190px;
@@ -106,19 +107,26 @@ audio {
     border-radius: 50% 50%;
     position: absolute;
     border:3px solid #5762ad;
+    transform: translateY(-2000px);
 
 }
+.box1.current  .pic a img {
+    transition: all 1.8s  linear;
+    transform:translateY(0);
+}
+
+.box1 .public1,.public3 {
+    transform: translateX(-2000px);
+}
+
+.box1 .public2,.public4 {
+    transform: translateX(2000px);
+}
+
 .box1.current .public {
-    animation: change 1s steps(5) 1.2s 1 forwards;
-}
-
-@keyframes change {
-    0% {
-         widtn:0;
-    }
-    100% {
-        width: 50%;
-    }
+    transition: all 1.8s linear;
+    transform:translateX(0);
+    opacity: 1;
 }
 
 .box2{
@@ -331,6 +339,27 @@ position: relative;
 }
 .box3 p a:hover{
     color:pink;
+}
+
+.box3 .skill1 {
+    transform:translateY(-2000px);
+}
+
+.box3 .skill5 {
+    transform:translateY(2000px);
+
+}
+.box3 .skill3{
+    transform: translateX(-2000px);
+}
+.box3 .skill2,.skill4{
+    transform: translateX(2000px);
+}
+
+.box3.current .skill0{
+    transition: all 2s linear;
+    transform: translateY(0);
+    transform: translateX(0);
 }
 .box4{
     background-color: #abcdef;
